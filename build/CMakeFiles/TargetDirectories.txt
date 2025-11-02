@@ -1,0 +1,5 @@
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/CMakeFiles/NMN.dir
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/CMakeFiles/edit_cache.dir
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/CMakeFiles/rebuild_cache.dir
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/CMakeFiles/NMN_autogen_timestamp_deps.dir
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/CMakeFiles/NMN_autogen.dir

@@ -1,0 +1,9 @@
+# ninja log v6
+6	532	7837709035578102	NMN_autogen/timestamp	16adc067f123fec2
+6	532	7837709035578102	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
+6	532	7837709035578102	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
+6	532	7837709035578102	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
+557	1740	7837709036498877	CMakeFiles/NMN.dir/src/main.cpp.obj	abc8e4f97835bfc1
+539	1769	7837709036323824	CMakeFiles/NMN.dir/NMN_autogen/mocs_compilation.cpp.obj	9816a104b5eb144e
+548	1795	7837709036418051	CMakeFiles/NMN.dir/src/NMN.cpp.obj	73d1d512e14187c2
+1802	1939	7837709048953574	NMN.exe	6564e52537998c8f
