@@ -1,5 +1,5 @@
 #pragma once
-#include "ui_NMN.h"
+#include "NMN_autogen/include/ui_NMN.h"
 #include <QMainWindow>
 
 class NMN : public QMainWindow {

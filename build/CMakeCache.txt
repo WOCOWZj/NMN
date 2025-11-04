@@ -269,6 +269,9 @@ NMN_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 NMN_SOURCE_DIR:STATIC=C:/Users/29607/Documents/2025 spring CPCT/C/NMN
 
+//Path to OpenCVConfig.cmake
+OpenCV_DIR:PATH=D:/opencv/opencv/build
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -502,6 +505,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_TAPI-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[D:/opencv/opencv/build][v4.12.0()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding WrapAtomic

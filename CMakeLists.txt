@@ -18,4 +18,7 @@ add_executable(${PROJECT_NAME}
     WIN32 # If you need a terminal for debug, please comment this statement 
     ${srcs} 
 ) 
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets) # Qt5 Shared Library
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets) # Qt6 Shared Library
+
+include_directories(D:/opencv/opencv/build/include)
+target_link_libraries(${PROJECT_NAME} PRIVATE "D:/opencv/opencv/build/x64/mingw/lib/libopencv_world4110.dll.a")
