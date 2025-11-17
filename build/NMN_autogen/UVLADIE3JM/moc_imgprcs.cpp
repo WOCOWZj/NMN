@@ -1,13 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'NMN.h'
+** Meta object code from reading C++ file 'imgprcs.h'
 **
 ** Created by: The Qt Meta Object Compiler version 69 (Qt 6.9.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../src/NMN.h"
-#include <QtGui/qtextcursor.h>
+#include "../../../src/imgprcs.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -17,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'NMN.h' doesn't include <QObject>."
+#error "The header file 'imgprcs.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 69
 #error "This file was generated using the moc from 6.9.3. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -32,22 +31,22 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
-struct qt_meta_tag_ZN3NMNE_t {};
+struct qt_meta_tag_ZN7ImgprcsE_t {};
 } // unnamed namespace
 
-template <> constexpr inline auto NMN::qt_create_metaobjectdata<qt_meta_tag_ZN3NMNE_t>()
+template <> constexpr inline auto Imgprcs::qt_create_metaobjectdata<qt_meta_tag_ZN7ImgprcsE_t>()
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "NMN",
-        "imageDropped",
+        "Imgprcs",
+        "onImageRecieved",
         "",
         "filePath"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'imageDropped'
-        QtMocHelpers::SignalData<void(const QString)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+        // Slot 'onImageRecieved'
+        QtMocHelpers::SlotData<void(const QString)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
     };
@@ -55,50 +54,46 @@ template <> constexpr inline auto NMN::qt_create_metaobjectdata<qt_meta_tag_ZN3N
     };
     QtMocHelpers::UintData qt_enums {
     };
-    return QtMocHelpers::metaObjectData<NMN, qt_meta_tag_ZN3NMNE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+    return QtMocHelpers::metaObjectData<Imgprcs, qt_meta_tag_ZN7ImgprcsE_t>(QMC::MetaObjectFlag{}, qt_stringData,
             qt_methods, qt_properties, qt_enums);
 }
-Q_CONSTINIT const QMetaObject NMN::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN3NMNE_t>.stringdata,
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN3NMNE_t>.data,
+Q_CONSTINIT const QMetaObject Imgprcs::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7ImgprcsE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7ImgprcsE_t>.data,
     qt_static_metacall,
     nullptr,
-    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN3NMNE_t>.metaTypes,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN7ImgprcsE_t>.metaTypes,
     nullptr
 } };
 
-void NMN::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Imgprcs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    auto *_t = static_cast<NMN *>(_o);
+    auto *_t = static_cast<Imgprcs *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->imageDropped((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->onImageRecieved((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
-    if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (NMN::*)(const QString )>(_a, &NMN::imageDropped, 0))
-            return;
-    }
 }
 
-const QMetaObject *NMN::metaObject() const
+const QMetaObject *Imgprcs::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *NMN::qt_metacast(const char *_clname)
+void *Imgprcs::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN3NMNE_t>.strings))
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7ImgprcsE_t>.strings))
         return static_cast<void*>(this);
-    return QMainWindow::qt_metacast(_clname);
+    return QObject::qt_metacast(_clname);
 }
 
-int NMN::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Imgprcs::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QMainWindow::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
@@ -112,11 +107,5 @@ int NMN::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 1;
     }
     return _id;
-}
-
-// SIGNAL 0
-void NMN::imageDropped(const QString _t1)
-{
-    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }
 QT_WARNING_POP

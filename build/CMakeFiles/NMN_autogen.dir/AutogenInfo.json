@@ -293,6 +293,12 @@
 			"MU",
 			"UVLADIE3JM/moc_NMN.cpp",
 			null
+		],
+		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.h",
+			"MU",
+			"UVLADIE3JM/moc_imgprcs.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -371,6 +377,11 @@
 	[
 		[
 			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/NMN.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.cpp",
 			"MU",
 			null
 		],

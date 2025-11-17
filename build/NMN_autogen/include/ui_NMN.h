@@ -6,8 +6,7 @@
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_NMN_H
-#define UI_NMN_H
+#pragma once
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -15,6 +14,10 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QVBoxLayout>
+#include <QImage>
+#include <QScrollArea>
 
 QT_BEGIN_NAMESPACE
 
@@ -24,12 +27,13 @@ public:
     QWidget *centralwidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
+    QLabel *imageLabel;
+    QLabel *infoLabel;
+    QVBoxLayout *layout;
+    QScrollArea *scrollarea;
 
     void setupUi(QMainWindow *NMN)
     {
-        if (NMN->objectName().isEmpty())
-            NMN->setObjectName("NMN");
-        NMN->resize(800, 600);
         centralwidget = new QWidget(NMN);
         centralwidget->setObjectName("centralwidget");
         NMN->setCentralWidget(centralwidget);
@@ -40,22 +44,38 @@ public:
         statusbar->setObjectName("statusbar");
         NMN->setStatusBar(statusbar);
 
-        retranslateUi(NMN);
+        layout = new QVBoxLayout(centralwidget);
+
+        imageLabel = new QLabel("拖拽图片到此处");
+        imageLabel->setAlignment(Qt::AlignCenter);
+        imageLabel->setStyleSheet("QLabel { border: 2px dashed #ccc; padding: 20px; }");
+        imageLabel->setMinimumSize(400, 300);
+
+        scrollarea = new QScrollArea(NMN);
+        scrollarea->setWidget(imageLabel);
+        scrollarea->setWidgetResizable(true);
+        scrollarea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        scrollarea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+        infoLabel = new QLabel("未选择图片");
+        infoLabel->setAlignment(Qt::AlignCenter);
+
+        layout->addWidget(scrollarea);
+        layout->addWidget(infoLabel);
+
+        NMN->setCentralWidget(centralwidget);
+        NMN->setWindowTitle("NMN");
+        NMN->resize(500, 400);
 
         QMetaObject::connectSlotsByName(NMN);
     } // setupUi
-
-    void retranslateUi(QMainWindow *NMN)
-    {
-        NMN->setWindowTitle(QCoreApplication::translate("NMN", "NMN", nullptr));
-    } // retranslateUi
-
 };
 
-namespace Ui {
-    class NMN: public Ui_NMN {};
+namespace Ui
+{
+    class NMN : public Ui_NMN
+    {
+    };
 } // namespace Ui
 
 QT_END_NAMESPACE
-
-#endif // UI_NMN_H
