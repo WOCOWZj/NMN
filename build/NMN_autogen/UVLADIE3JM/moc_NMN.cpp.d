@@ -203,6 +203,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMenuBar \
   D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMessageBox \
   D:/Qt/6.9.3/mingw_64/include/QtWidgets/QScrollArea \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/QSizePolicy \
   D:/Qt/6.9.3/mingw_64/include/QtWidgets/QStatusBar \
   D:/Qt/6.9.3/mingw_64/include/QtWidgets/QVBoxLayout \
   D:/Qt/6.9.3/mingw_64/include/QtWidgets/QWidget \

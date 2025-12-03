@@ -8,6 +8,7 @@
         "qdragenterevent": "cpp",
         "new": "cpp",
         "string": "cpp",
-        "format": "cpp"
+        "format": "cpp",
+        "qmessagebox": "cpp"
     }
 }

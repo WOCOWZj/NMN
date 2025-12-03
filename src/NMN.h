@@ -9,6 +9,7 @@
 #include <QMessageBox>
 #include <QPixmap>
 #include <QString>
+#include <qminmax.h>
 
 class NMN : public QMainWindow
 {

@@ -39,13 +39,13 @@ template <> constexpr inline auto Imgprcs::qt_create_metaobjectdata<qt_meta_tag_
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "Imgprcs",
-        "onImageRecieved",
+        "onImageReceived",
         "",
         "filePath"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'onImageRecieved'
+        // Slot 'onImageReceived'
         QtMocHelpers::SlotData<void(const QString)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
@@ -72,7 +72,7 @@ void Imgprcs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     auto *_t = static_cast<Imgprcs *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onImageRecieved((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->onImageReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }

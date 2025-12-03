@@ -1,10 +1,14 @@
 C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/moc_imgprcs.cpp: C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/imgprcs.h \
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/moc_predefs.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QObject \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/QRect \
   D:/Qt/6.9.3/mingw_64/include/QtCore/q17memory.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/q20functional.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/q20iterator.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/q20memory.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/q20type_traits.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/q20utility.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/q23utility.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qalgorithms.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qanystringview.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qarraydata.h \
@@ -29,8 +33,11 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qcontainerfwd.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qcontainertools_impl.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qcontiguouscache.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qdatastream.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qdebug.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qendian.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qexceptionhandling.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qflags.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qfloat16.h \
@@ -40,14 +47,18 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qgenericatomic.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qglobal.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qglobalstatic.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qhash.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qhashfunctions.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qiterable.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qiterator.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qlatin1stringview.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qline.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qlist.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qlogging.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qmalloc.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qmap.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qmargins.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qmath.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qmetacontainer.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qmetatype.h \
@@ -60,10 +71,19 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qobjectdefs_impl.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qoverload.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qpair.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qpoint.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qprocessordetection.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qrect.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qrefcount.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qscopedpointer.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qscopeguard.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qset.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qshareddata.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qshareddata_impl.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qsharedpointer.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qsharedpointer_impl.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qsize.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qspan.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qstdlibdetection.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qstring.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -89,6 +109,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtdeprecationdefinitions.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtenvironmentvariables.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qtextstream.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtformat_impl.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtmetamacros.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtnoop.h \
@@ -101,9 +122,46 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtypeinfo.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qtypes.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qutf8stringview.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qvariant.h \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qaction.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qbitmap.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qbrush.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qcolor.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qcursor.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qfont.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qfontinfo.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qfontmetrics.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qfontvariableaxis.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qicon.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qimage.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qkeysequence.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpaintdevice.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpalette.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpixelformat.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpixmap.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpolygon.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qregion.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qrgb.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qrgba64.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qtgui-config.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qtguiexports.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qtguiglobal.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qtransform.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qwindowdefs.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMessageBox \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qdialog.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qmessagebox.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+  D:/Qt/6.9.3/mingw_64/include/QtWidgets/qwidget.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/algorithm \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/atomic \
@@ -209,10 +267,12 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/utility.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cfloat \
@@ -291,6 +351,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_map \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/variant \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector \
@@ -460,6 +521,11 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/opencv/opencv/build/include/opencv2/stitching/detail/warpers.hpp \
   D:/opencv/opencv/build/include/opencv2/stitching/detail/warpers_inl.hpp \
   D:/opencv/opencv/build/include/opencv2/stitching/warpers.hpp \
+  D:/opencv/opencv/build/include/opencv2/text.hpp \
+  D:/opencv/opencv/build/include/opencv2/text/erfilter.hpp \
+  D:/opencv/opencv/build/include/opencv2/text/ocr.hpp \
+  D:/opencv/opencv/build/include/opencv2/text/swt_text_detection.hpp \
+  D:/opencv/opencv/build/include/opencv2/text/textDetector.hpp \
   D:/opencv/opencv/build/include/opencv2/video.hpp \
   D:/opencv/opencv/build/include/opencv2/video/background_segm.hpp \
   D:/opencv/opencv/build/include/opencv2/video/tracking.hpp \

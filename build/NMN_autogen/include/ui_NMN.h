@@ -18,6 +18,7 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QImage>
 #include <QScrollArea>
+#include <QSizePolicy>
 
 QT_BEGIN_NAMESPACE
 
@@ -49,7 +50,7 @@ public:
         imageLabel = new QLabel("拖拽图片到此处");
         imageLabel->setAlignment(Qt::AlignCenter);
         imageLabel->setStyleSheet("QLabel { border: 2px dashed #ccc; padding: 20px; }");
-        imageLabel->setMinimumSize(400, 300);
+        imageLabel->setContentsMargins(20, 20, 20, 20);
 
         scrollarea = new QScrollArea(NMN);
         scrollarea->setWidget(imageLabel);

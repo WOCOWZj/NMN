@@ -38,9 +38,9 @@ void NMN::dropEvent(QDropEvent *event)
 
     ui->scrollarea->setMinimumWidth(800);
     ui->imageLabel->setMinimumWidth(800);
-    ui->scrollarea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-    QPixmap scaledPixmap = QPixmap(filepath).scaledToWidth(ui->imageLabel->width(), Qt::SmoothTransformation);
-    ui->imageLabel->setFixedHeight(scaledPixmap.height());
+    ui->scrollarea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    ui->scrollarea->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+    QPixmap scaledPixmap = QPixmap(filepath).scaledToWidth(ui->imageLabel->width() - 40, Qt::SmoothTransformation);
     ui->imageLabel->setPixmap(scaledPixmap);
 
     this->path = filepath;
