@@ -4,21 +4,24 @@
 #include <opencv2/opencv.hpp>
 #include <QRect>
 #include <QMessageBox>
-#include <opencv2/text.hpp>
+
+
+#include "tessthread.h"
 
 class Imgprcs : public QObject
 {
     Q_OBJECT
+    QString pretreated_image_path = "build/assets/pretreated_image.png";
 
 public:
     cv::Mat img;
 
 public slots:
-    void onImageReceived(const QString filePath);
+    void onImageReceived(const QString &filePath);
 
 public:
     cv::Mat pretreated_image;
     void pretreat();
-    void locateElements();
+    void onOCRReceicved(const QString &result);
 
 };

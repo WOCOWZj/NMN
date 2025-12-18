@@ -1,10 +1,15 @@
 #include "imgprcs.h"
 
-void Imgprcs::onImageReceived(const QString filepath)
+void Imgprcs::onImageReceived(const QString &filepath)
 {
     this->img = cv::imread(filepath.toStdString());
+
     pretreat();
-    locateElements();
+
+    Controller *controller = new Controller;
+    connect(controller, &Controller::resultReady, this, &Imgprcs::onOCRReceicved);
+    emit controller->operate(pretreated_image_path);
+
     return;
 }
 
@@ -22,29 +27,23 @@ void Imgprcs::pretreat()
     cv::adaptiveThreshold(blur_image, bin_image, 255, cv::ADAPTIVE_THRESH_GAUSSIAN_C, cv::THRESH_BINARY_INV, actualBlockSize, C_value);
 
     pretreated_image = bin_image;
-    if (!cv::imwrite("build/assets/pretreated_image.png", pretreated_image))
+    if (!cv::imwrite(pretreated_image_path.toStdString(), pretreated_image))
         QMessageBox::about(nullptr, "Error", "Failed to Save");
 }
 
-void Imgprcs::locateElements()
+void Imgprcs::onOCRReceicved(const QString &result)
 {
-    FILE *fp = fopen("build/assets/output.txt", "w");
-    const char *datapath = "D:/Tesseract-OCR/tessdata/";
-    const char *language = "eng";
-    const char *char_whitelist = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    int oem = cv::text::OEM_TESSERACT_ONLY;
-    int psmode = cv::text::PSM_AUTO;
-    cv::Ptr<cv::text::OCRTesseract> ocr = cv::text::OCRTesseract::create(datapath, language, char_whitelist, oem, psmode);
+    QFile::remove(pretreated_image_path);
 
-    std::string output;
-    std::vector<cv::Rect> boxes;
-    std::vector<std::string> words;
-    std::vector<float> confidences;
+    {
+        QFile logFile("NMN.log");
+        if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
+        {
+            QTextStream out(&logFile);
+            out << "OCR result" << result << "\n";
+            logFile.close();
+        }
+    }
 
-    cv::Mat testImg = cv::imread("testImg.png");
-
-    ocr->run(testImg, output, &boxes, &words, &confidences, cv::text::OCR_LEVEL_WORD);
-
-    fprintf(fp, "OCR output = \"%s\" length = %d", output.c_str(), output.size());
-    fclose(fp);
+    
 }

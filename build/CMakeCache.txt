@@ -321,6 +321,9 @@ Qt6ZlibPrivate_DIR:PATH=D:/Qt/6.9.3/mingw_64/lib/cmake/Qt6ZlibPrivate
 //The directory containing a CMake configuration file for Qt6.
 Qt6_DIR:PATH=D:/Qt/6.9.3/mingw_64/lib/cmake/Qt6
 
+//The directory containing a CMake configuration file for SW.
+SW_DIR:PATH=SW_DIR-NOTFOUND
+
 //Path to a program.
 Vulkan_GLSLANG_VALIDATOR_EXECUTABLE:FILEPATH=Vulkan_GLSLANG_VALIDATOR_EXECUTABLE-NOTFOUND
 

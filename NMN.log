@@ -1,0 +1,147 @@
+
+-----------------------
+2025-12-17 21:00:46
+
+-----------------------
+2025-12-18 10:18:39
+command: D:/Tesseract-OCR/tesseract.exeC:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.pngC:/Users/29607/Documents/2025 spring CPCT/C/NMN/output--psm 6 - tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:20:26
+command: D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 - tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:21:23
+command: tesseract "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 -c tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:23:28
+command: "D:/Tesseract-OCR/tesseract.exe" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 -c tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:23:58
+command: "D:/Tesseract-OCR/tesseract.exe" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 -c tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:24:30
+command: D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 -c tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:25:23
+command:
+D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 -c tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:34:37
+command:
+tesseract --version
+ret:
+
+
+-----------------------
+2025-12-18 10:35:02
+command:
+tesseract --version
+ret:
+tesseract v5.5.0.20241111
+ leptonica-1.85.0
+  libgif 5.2.2 : libjpeg 8d (libjpeg-turbo 3.0.4) : libpng 1.6.44 : libtiff 4.7.0 : zlib 1.3.1 : libwebp 1.4.0 : libopenjp2 2.5.2
+ Found AVX512BW
+ Found AVX512F
+ Found AVX512VNNI
+ Found AVX2
+ Found AVX
+ Found FMA
+ Found SSE4.1
+ Found libarchive 3.7.7 zlib/1.3.1 liblzma/5.6.3 bz2lib/1.0.8 liblz4/1.10.0 libzstd/1.5.6
+ Found libcurl/8.11.0 Schannel zlib/1.3.1 brotli/1.1.0 zstd/1.5.6 libidn2/2.3.7 libpsl/0.21.5 libssh2/1.11.0
+
+
+-----------------------
+2025-12-18 10:35:57
+command:
+D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output" --psm 6 -c tessedit_char_whitelist=01234567 tsv
+
+-----------------------
+2025-12-18 10:38:03
+
+-----------------------
+2025-12-18 10:40:38
+
+-----------------------
+2025-12-18 10:40:47
+cmd
+D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output"
+ret
+
+
+-----------------------
+2025-12-18 10:42:07
+cmd
+D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/output"
+ret
+Error, could not create TXT output file: Invalid argument
+
+
+-----------------------
+2025-12-18 10:44:23
+cmd
+D:/Tesseract-OCR/tesseract.exe "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png" output
+ret
+Error, cannot read input file "C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/assets/pretreated_image.png": Invalid argument
+Error during processing.
+
+
+-----------------------
+2025-12-18 10:45:49
+cmd
+D:/Tesseract-OCR/tesseract.exe build/assets/pretreated_image.png output
+ret
+Estimating resolution as 258
+
+
+-----------------------
+2025-12-18 10:48:10
+OCR start
+ret
+Error, unknown command line argument '--psm 6'
+
+OCR result
+
+-----------------------
+2025-12-18 10:48:44
+OCR start
+ret
+Error, unknown command line argument '--psm '
+
+OCR result
+
+-----------------------
+2025-12-18 10:49:03
+OCR start
+ret
+Error, cannot read input file build/assets/pretreated_image.png: No such file or directory
+Error during processing.
+
+OCR result
+
+-----------------------
+2025-12-18 10:49:40
+OCR start
+ret
+
+OCR success
+OCR resultlevel	page_num	block_num	par_num	line_num	word_num	left	top	width	height	conf	text
+1	1	0	0	0	0	0	0	1252	201	-1	
+2	1	1	0	0	0	143	4	983	197	-1	
+3	1	1	1	0	0	143	46	983	155	-1	
+4	1	1	1	1	0	148	46	903	27	-1	
+5	1	1	1	1	1	148	46	903	27	0.000000	73773
+4	1	1	1	2	0	144	62	982	44	-1	
+5	1	1	1	2	1	144	62	982	44	0.000000	1232343454565676717121232343454505676771200
+4	1	1	1	3	0	146	143	904	27	-1	
+5	1	1	1	3	1	146	143	481	27	0.000000	3336
+5	1	1	1	3	2	692	153	358	15	0.000000	33
+4	1	1	1	4	0	143	161	983	40	-1	
+5	1	1	1	4	1	143	161	983	40	0.000000	21717676565454340262121717670565454343232100
+

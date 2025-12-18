@@ -1,1 +1,0 @@
-12OCR output = "" length = 0

@@ -9,6 +9,10 @@
         "new": "cpp",
         "string": "cpp",
         "format": "cpp",
-        "qmessagebox": "cpp"
+        "qmessagebox": "cpp",
+        "iostream": "cpp",
+        "string_view": "cpp",
+        "functional": "cpp",
+        "variant": "cpp"
     }
 }

@@ -9,11 +9,19 @@
 
 int main(int argc, char *argv[])
 {
+    QFile logFile("NMN.log");
+    if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
+    {
+        QTextStream out(&logFile);
+        out << "\n-----------------------\n"
+            << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") << "\n";
+        logFile.close();
+    }
+
     QApplication a(argc, argv);
     NMN mainwindow;
     mainwindow.show();
     Imgprcs imageprocessor;
     QObject::connect(&mainwindow, &NMN::imageDropped, &imageprocessor, &Imgprcs::onImageReceived);
-    imageprocessor.locateElements();
     return a.exec();
 }

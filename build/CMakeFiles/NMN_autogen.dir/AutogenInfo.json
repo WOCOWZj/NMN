@@ -305,6 +305,12 @@
 			"MU",
 			"UVLADIE3JM/moc_marker.cpp",
 			null
+		],
+		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.h",
+			"MU",
+			"UVLADIE3JM/moc_tessthread.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -398,6 +404,11 @@
 		],
 		[
 			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/marker.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.cpp",
 			"MU",
 			null
 		]

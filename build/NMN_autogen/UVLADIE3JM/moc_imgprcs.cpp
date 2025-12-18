@@ -46,7 +46,7 @@ template <> constexpr inline auto Imgprcs::qt_create_metaobjectdata<qt_meta_tag_
 
     QtMocHelpers::UintData qt_methods {
         // Slot 'onImageReceived'
-        QtMocHelpers::SlotData<void(const QString)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
     };

@@ -2,3 +2,4 @@
 #include "UVLADIE3JM/moc_NMN.cpp"
 #include "UVLADIE3JM/moc_imgprcs.cpp"
 #include "UVLADIE3JM/moc_marker.cpp"
+#include "UVLADIE3JM/moc_tessthread.cpp"

@@ -12,16 +12,24 @@ NMN_autogen/timestamp: \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/main.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/marker.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/marker.h \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.cpp \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QDir \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QEvent \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QFile \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QIODevice \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QList \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QMargins \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QMimeData \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QObject \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QProcess \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QRect \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QSize \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QSizeF \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QString \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QStringList \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QThread \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QVariant \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/q17memory.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/q20functional.h \
@@ -66,6 +74,8 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qdatetime.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qdeadlinetimer.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qdebug.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/qdir.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/qdirlisting.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qelapsedtimer.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qendian.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qeventloop.h \
@@ -110,6 +120,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qoverload.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qpair.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qpoint.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/qprocess.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qprocessordetection.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qrect.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qrefcount.h \
@@ -149,6 +160,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qtenvironmentvariables.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qtextstream.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qtformat_impl.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/qthread.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qtimezone.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qtmetamacros.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qtnoop.h \
@@ -463,6 +475,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_base.h \
+	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_lockfree_defines.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
@@ -527,6 +540,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_mutex.h \
+	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -576,6 +590,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/complex \
+	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
@@ -597,6 +612,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
+	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/future \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
 	D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
@@ -816,11 +832,6 @@ NMN_autogen/timestamp: \
 	D:/opencv/opencv/build/include/opencv2/stitching/detail/warpers.hpp \
 	D:/opencv/opencv/build/include/opencv2/stitching/detail/warpers_inl.hpp \
 	D:/opencv/opencv/build/include/opencv2/stitching/warpers.hpp \
-	D:/opencv/opencv/build/include/opencv2/text.hpp \
-	D:/opencv/opencv/build/include/opencv2/text/erfilter.hpp \
-	D:/opencv/opencv/build/include/opencv2/text/ocr.hpp \
-	D:/opencv/opencv/build/include/opencv2/text/swt_text_detection.hpp \
-	D:/opencv/opencv/build/include/opencv2/text/textDetector.hpp \
 	D:/opencv/opencv/build/include/opencv2/video.hpp \
 	D:/opencv/opencv/build/include/opencv2/video/background_segm.hpp \
 	D:/opencv/opencv/build/include/opencv2/video/tracking.hpp \
