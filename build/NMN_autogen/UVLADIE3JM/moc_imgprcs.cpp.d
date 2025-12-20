@@ -2,12 +2,16 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/moc_predefs.h \
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QDir \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/QElapsedTimer \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QFile \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QIODevice \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/QList \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QObject \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QProcess \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QRect \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QStringList \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/QTextStream \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QThread \
   D:/Qt/6.9.3/mingw_64/include/QtCore/q17memory.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/q20functional.h \

@@ -31,14 +31,14 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
-struct qt_meta_tag_ZN7ImgprcsE_t {};
+struct qt_meta_tag_ZN12imgProcessorE_t {};
 } // unnamed namespace
 
-template <> constexpr inline auto Imgprcs::qt_create_metaobjectdata<qt_meta_tag_ZN7ImgprcsE_t>()
+template <> constexpr inline auto imgProcessor::qt_create_metaobjectdata<qt_meta_tag_ZN12imgProcessorE_t>()
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "Imgprcs",
+        "imgProcessor",
         "onImageReceived",
         "",
         "filePath"
@@ -54,22 +54,22 @@ template <> constexpr inline auto Imgprcs::qt_create_metaobjectdata<qt_meta_tag_
     };
     QtMocHelpers::UintData qt_enums {
     };
-    return QtMocHelpers::metaObjectData<Imgprcs, qt_meta_tag_ZN7ImgprcsE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+    return QtMocHelpers::metaObjectData<imgProcessor, qt_meta_tag_ZN12imgProcessorE_t>(QMC::MetaObjectFlag{}, qt_stringData,
             qt_methods, qt_properties, qt_enums);
 }
-Q_CONSTINIT const QMetaObject Imgprcs::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject imgProcessor::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7ImgprcsE_t>.stringdata,
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7ImgprcsE_t>.data,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12imgProcessorE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12imgProcessorE_t>.data,
     qt_static_metacall,
     nullptr,
-    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN7ImgprcsE_t>.metaTypes,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN12imgProcessorE_t>.metaTypes,
     nullptr
 } };
 
-void Imgprcs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void imgProcessor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    auto *_t = static_cast<Imgprcs *>(_o);
+    auto *_t = static_cast<imgProcessor *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->onImageReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
@@ -78,20 +78,20 @@ void Imgprcs::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     }
 }
 
-const QMetaObject *Imgprcs::metaObject() const
+const QMetaObject *imgProcessor::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Imgprcs::qt_metacast(const char *_clname)
+void *imgProcessor::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7ImgprcsE_t>.strings))
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12imgProcessorE_t>.strings))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int Imgprcs::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int imgProcessor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)

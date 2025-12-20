@@ -4,24 +4,34 @@
 #include <opencv2/opencv.hpp>
 #include <QRect>
 #include <QMessageBox>
-
+#include <QFile>
+#include <QTextStream>
+#include <QList>
+#include <QStringList>
+#include <qminmax.h>
 
 #include "tessthread.h"
 
-class Imgprcs : public QObject
+struct lineH
+{
+    int top;
+    int height;
+};
+
+class imgProcessor : public QObject
 {
     Q_OBJECT
-    QString pretreated_image_path = "build/assets/pretreated_image.png";
 
-public:
-    cv::Mat img;
+private:
+    QString pretreated_image_path = "assets/pretreated_image.png";
+    QString hseg_image_path_format = "assets/hseg_%1.png";
+    cv::Mat origin_img;
+    cv::Mat pretreated_image;
 
 public slots:
     void onImageReceived(const QString &filePath);
 
 public:
-    cv::Mat pretreated_image;
     void pretreat();
-    void onOCRReceicved(const QString &result);
-
+    void hsegment();
 };

@@ -28,5 +28,5 @@ private:
     Ui_NMN *ui;
 
 signals:
-    void imageDropped(const QString filePath);
+    void ImageDropped(const QString filePath);
 };

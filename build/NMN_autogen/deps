@@ -15,6 +15,7 @@ NMN_autogen/timestamp: \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QDir \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QElapsedTimer \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QEvent \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QFile \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo \
@@ -29,6 +30,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QSizeF \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QString \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QStringList \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/QTextStream \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QThread \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QVariant \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/q17memory.h \

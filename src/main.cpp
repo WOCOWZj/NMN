@@ -21,7 +21,11 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     NMN mainwindow;
     mainwindow.show();
-    Imgprcs imageprocessor;
-    QObject::connect(&mainwindow, &NMN::imageDropped, &imageprocessor, &Imgprcs::onImageReceived);
+    
+    imgProcessor imageprocessor;
+    QObject::connect(&mainwindow, &NMN::ImageDropped, &imageprocessor, &imgProcessor::onImageReceived);
+
+    imageprocessor.onImageReceived("test.jpg");
+
     return a.exec();
 }

@@ -987,12 +987,16 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.h
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.h
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.h
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QDir
+ mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QElapsedTimer
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QFile
+ mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QIODevice
+ mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QList
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QObject
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QProcess
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QRect
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QStringList
+ mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QTextStream
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QThread
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/q17memory.h
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/q20functional.h
@@ -1905,7 +1909,9 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.h
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/moc_predefs.h
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.h
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QDir
+ mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QElapsedTimer
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QFile
+ mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QIODevice
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QProcess
  mdp:D:/Qt/6.9.3/mingw_64/include/QtCore/QStringList

@@ -44,7 +44,7 @@ void NMN::dropEvent(QDropEvent *event)
     ui->imageLabel->setPixmap(scaledPixmap);
 
     this->path = filepath;
-    emit imageDropped(filepath);
+    emit ImageDropped(filepath);
 
     event->accept();
 
