@@ -8,6 +8,7 @@
 
 #include "../../../src/imgprcs.h"
 #include <QtCore/qmetatype.h>
+#include <QtCore/QList>
 
 #include <QtCore/qtmochelpers.h>
 
@@ -31,81 +32,119 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
-struct qt_meta_tag_ZN12imgProcessorE_t {};
+struct qt_meta_tag_ZN12ImgProcessorE_t {};
 } // unnamed namespace
 
-template <> constexpr inline auto imgProcessor::qt_create_metaobjectdata<qt_meta_tag_ZN12imgProcessorE_t>()
+template <> constexpr inline auto ImgProcessor::qt_create_metaobjectdata<qt_meta_tag_ZN12ImgProcessorE_t>()
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "imgProcessor",
-        "onImageReceived",
+        "ImgProcessor",
+        "ImageProcessed",
         "",
+        "pixmap",
+        "QList<Note>",
+        "notes",
+        "QWidget*",
+        "parent",
+        "onImageReceived",
         "filePath"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Signal 'ImageProcessed'
+        QtMocHelpers::SignalData<void(const QPixmap &, const QList<Note> &, QWidget *)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QPixmap, 3 }, { 0x80000000 | 4, 5 }, { 0x80000000 | 6, 7 },
+        }}),
+        // Signal 'ImageProcessed'
+        QtMocHelpers::SignalData<void(const QPixmap &, const QList<Note> &)>(1, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+            { QMetaType::QPixmap, 3 }, { 0x80000000 | 4, 5 },
+        }}),
         // Slot 'onImageReceived'
-        QtMocHelpers::SlotData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 3 },
+        QtMocHelpers::SlotData<void(const QString &)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 9 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
     QtMocHelpers::UintData qt_enums {
     };
-    return QtMocHelpers::metaObjectData<imgProcessor, qt_meta_tag_ZN12imgProcessorE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+    return QtMocHelpers::metaObjectData<ImgProcessor, qt_meta_tag_ZN12ImgProcessorE_t>(QMC::MetaObjectFlag{}, qt_stringData,
             qt_methods, qt_properties, qt_enums);
 }
-Q_CONSTINIT const QMetaObject imgProcessor::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject ImgProcessor::staticMetaObject = { {
     QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12imgProcessorE_t>.stringdata,
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12imgProcessorE_t>.data,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12ImgProcessorE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12ImgProcessorE_t>.data,
     qt_static_metacall,
     nullptr,
-    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN12imgProcessorE_t>.metaTypes,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN12ImgProcessorE_t>.metaTypes,
     nullptr
 } };
 
-void imgProcessor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ImgProcessor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    auto *_t = static_cast<imgProcessor *>(_o);
+    auto *_t = static_cast<ImgProcessor *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->onImageReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->ImageProcessed((*reinterpret_cast< std::add_pointer_t<QPixmap>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<Note>>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QWidget*>>(_a[3]))); break;
+        case 1: _t->ImageProcessed((*reinterpret_cast< std::add_pointer_t<QPixmap>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<Note>>>(_a[2]))); break;
+        case 2: _t->onImageReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 0:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 2:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QWidget* >(); break;
+            }
+            break;
+        }
+    }
+    if (_c == QMetaObject::IndexOfMethod) {
+        if (QtMocHelpers::indexOfMethod<void (ImgProcessor::*)(const QPixmap & , const QList<Note> & , QWidget * )>(_a, &ImgProcessor::ImageProcessed, 0))
+            return;
+    }
 }
 
-const QMetaObject *imgProcessor::metaObject() const
+const QMetaObject *ImgProcessor::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *imgProcessor::qt_metacast(const char *_clname)
+void *ImgProcessor::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12imgProcessorE_t>.strings))
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN12ImgProcessorE_t>.strings))
         return static_cast<void*>(this);
     return QObject::qt_metacast(_clname);
 }
 
-int imgProcessor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ImgProcessor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        if (_id < 3)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 3;
     }
     return _id;
+}
+
+// SIGNAL 0
+void ImgProcessor::ImageProcessed(const QPixmap & _t1, const QList<Note> & _t2, QWidget * _t3)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2, _t3);
 }
 QT_WARNING_POP

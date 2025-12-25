@@ -295,15 +295,27 @@
 			null
 		],
 		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/convert.h",
+			"MU",
+			"UVLADIE3JM/moc_convert.cpp",
+			null
+		],
+		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/highlight.h",
+			"MU",
+			"UVLADIE3JM/moc_highlight.cpp",
+			null
+		],
+		[
 			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.h",
 			"MU",
 			"UVLADIE3JM/moc_imgprcs.cpp",
 			null
 		],
 		[
-			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/marker.h",
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/modification.h",
 			"MU",
-			"UVLADIE3JM/moc_marker.cpp",
+			"UVLADIE3JM/moc_modification.cpp",
 			null
 		],
 		[
@@ -393,6 +405,16 @@
 			null
 		],
 		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/convert.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/highlight.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.cpp",
 			"MU",
 			null
@@ -403,7 +425,7 @@
 			null
 		],
 		[
-			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/marker.cpp",
+			"C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/modification.cpp",
 			"MU",
 			null
 		],

@@ -1,6 +1,7 @@
 C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/moc_NMN.cpp: C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/NMN.h \
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/moc_predefs.h \
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/include/ui_NMN.h \
+  C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/noteclass.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QFileInfo \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QList \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QMimeData \
@@ -156,6 +157,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qyieldcpu.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QDragEnterEvent \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QImage \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/QPainter \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QPixmap \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QTransform \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qaction.h \
@@ -177,7 +179,9 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtGui/qinputmethod.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qkeysequence.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qpaintdevice.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpainter.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qpalette.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qpen.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qpicture.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qpixelformat.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qpixmap.h \
@@ -189,6 +193,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtGui/qscreen.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qscreen_platform.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qtextdocument.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/qtextoption.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qtguiexports.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qtguiglobal.h \

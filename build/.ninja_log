@@ -1,86 +1,15 @@
 # ninja log v6
-10	228	7878647449636557	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-10	228	7878647449636557	NMN_autogen/timestamp	16adc067f123fec2
-849	4037	7878643177525994	CMakeFiles/NMN.dir/src/NMN.cpp.obj	f87ef03ad3aea42e
-10	228	7878647449636557	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-10	228	7878647449636557	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-3032	3368	7878647479861842	NMN.exe	9b7459d61a23523d
-749	3903	7878644817338668	CMakeFiles/NMN.dir/src/main.cpp.obj	7ebdb699b0c03d87
-729	4385	7878644817136452	CMakeFiles/NMN.dir/NMN_autogen/mocs_compilation.cpp.obj	56916b9fb3fb1e69
+12	291	7883520779631296	NMN_autogen/timestamp	16adc067f123fec2
+12	291	7883520779631296	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
+12	291	7883520779631296	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
+1522	5881	7883456647579594	CMakeFiles/NMN.dir/src/NMN.cpp.obj	f87ef03ad3aea42e
+12	291	7883520779631296	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
+659	4415	7883520083199758	CMakeFiles/NMN.dir/src/main.cpp.obj	7ebdb699b0c03d87
+3633	4556	7883520815854870	NMN.exe	7c561fa0b33a00f
+639	5521	7883520082997515	CMakeFiles/NMN.dir/NMN_autogen/mocs_compilation.cpp.obj	56916b9fb3fb1e69
 859	2999	7849628637276945	CMakeFiles/NMN.dir/src/reciever.cpp.obj	4c6a7649fbee5d1b
-229	3032	7878647451826474	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-472	1462	7855076854854452	CMakeFiles/NMN.dir/src/marker.cpp.obj	964df454e44c6dbd
-239	2379	7878647451936039	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
-7	220	7878956692929901	NMN_autogen/timestamp	16adc067f123fec2
-7	220	7878956692929901	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-7	220	7878956692929901	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-7	220	7878956692929901	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-221	2584	7878956695059063	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-2584	2918	7878956718699627	NMN.exe	9b7459d61a23523d
-9	1082	7878967868774318	NMN_autogen/timestamp	16adc067f123fec2
-9	1082	7878967868774318	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	1082	7878967868774318	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	1082	7878967868774318	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-1092	3975	7878967869684921	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-1102	4149	7878967869787020	CMakeFiles/NMN.dir/src/main.cpp.obj	7ebdb699b0c03d87
-1082	4678	7878967869592066	CMakeFiles/NMN.dir/NMN_autogen/mocs_compilation.cpp.obj	56916b9fb3fb1e69
-9	222	7878968003024328	NMN_autogen/timestamp	16adc067f123fec2
-9	222	7878968003024328	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	222	7878968003024328	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	222	7878968003024328	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-223	2462	7878968005159952	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
-2462	2801	7878968027550839	NMN.exe	9b7459d61a23523d
-9	228	7878968943204746	NMN_autogen/timestamp	16adc067f123fec2
-9	228	7878968943204746	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	228	7878968943204746	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	228	7878968943204746	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-229	2411	7878968945404735	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
-2411	2737	7878968967234335	NMN.exe	9b7459d61a23523d
-9	221	7878970209733629	NMN_autogen/timestamp	16adc067f123fec2
-9	221	7878970209733629	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	221	7878970209733629	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	221	7878970209733629	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-232	2073	7878970211957705	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
-222	3204	7878970211842175	CMakeFiles/NMN.dir/src/main.cpp.obj	7ebdb699b0c03d87
-3204	3530	7878970241675680	NMN.exe	9b7459d61a23523d
-20	731	7878973695008693	NMN_autogen/timestamp	16adc067f123fec2
-20	731	7878973695008693	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-20	731	7878973695008693	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-20	731	7878973695008693	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-771	3630	7878973696301568	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
-744	4245	7878973696028965	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-757	4594	7878973696140476	CMakeFiles/NMN.dir/src/main.cpp.obj	7ebdb699b0c03d87
-732	5258	7878973695909819	CMakeFiles/NMN.dir/NMN_autogen/mocs_compilation.cpp.obj	56916b9fb3fb1e69
-5258	5588	7878973741161010	NMN.exe	9b7459d61a23523d
-9	665	7878974057140589	NMN_autogen/timestamp	16adc067f123fec2
-9	665	7878974057140589	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	665	7878974057140589	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	665	7878974057140589	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-688	4164	7878974058179985	CMakeFiles/NMN.dir/src/main.cpp.obj	7ebdb699b0c03d87
-676	4246	7878974058056760	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-666	4748	7878974057933828	CMakeFiles/NMN.dir/NMN_autogen/mocs_compilation.cpp.obj	56916b9fb3fb1e69
-4748	5067	7878974098779035	NMN.exe	9b7459d61a23523d
-9	233	7878974518800465	NMN_autogen/timestamp	16adc067f123fec2
-9	233	7878974518800465	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	233	7878974518800465	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	233	7878974518800465	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-234	2785	7878974521050706	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
-2785	3106	7878974546560580	NMN.exe	9b7459d61a23523d
-9	228	7878975091548190	NMN_autogen/timestamp	16adc067f123fec2
-9	228	7878975091548190	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	228	7878975091548190	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	228	7878975091548190	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-229	3215	7878975093743534	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-3215	3726	7878975123600445	NMN.exe	9b7459d61a23523d
-8	223	7878975448270391	NMN_autogen/timestamp	16adc067f123fec2
-8	223	7878975448270391	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-8	223	7878975448270391	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-8	223	7878975448270391	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-224	2943	7878975450412769	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-2943	3266	7878975477613466	NMN.exe	9b7459d61a23523d
-9	232	7878977637363122	NMN_autogen/timestamp	16adc067f123fec2
-9	232	7878977637363122	NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-9	232	7878977637363122	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/timestamp	16adc067f123fec2
-9	232	7878977637363122	C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/mocs_compilation.cpp	16adc067f123fec2
-233	3332	7878977639618383	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
-3332	3879	7878977670636177	NMN.exe	9b7459d61a23523d
+251	2260	7883513511876006	CMakeFiles/NMN.dir/src/modification.cpp.obj	93c8d48b06a380c0
+1549	6488	7883456647821625	CMakeFiles/NMN.dir/src/imgprcs.cpp.obj	950a7f5030ea6482
+1724	4513	7881176285581413	CMakeFiles/NMN.dir/src/marker.cpp.obj	964df454e44c6dbd
+1324	4916	7882703119781663	CMakeFiles/NMN.dir/src/tessthread.cpp.obj	5db99d49e8e709f6
+292	3633	7883520782446681	CMakeFiles/NMN.dir/src/highlight.cpp.obj	19180ddf535ae721

@@ -1,5 +1,6 @@
 C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/moc_imgprcs.cpp: C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/imgprcs.h \
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/moc_predefs.h \
+  C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/noteclass.h \
   C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QDir \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QElapsedTimer \
@@ -10,6 +11,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/QObject \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QProcess \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QRect \
+  D:/Qt/6.9.3/mingw_64/include/QtCore/QString \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QStringList \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QTextStream \
   D:/Qt/6.9.3/mingw_64/include/QtCore/QThread \
@@ -152,6 +154,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtCore/qversiontagging.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.9.3/mingw_64/include/QtCore/qyieldcpu.h \
+  D:/Qt/6.9.3/mingw_64/include/QtGui/QPixmap \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qaction.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qbitmap.h \
   D:/Qt/6.9.3/mingw_64/include/QtGui/qbrush.h \

@@ -1,105 +1,74 @@
 #include "tessthread.h"
 
-void Worker::doWork(const QString &imagePath, int psm, const QString &whitelist)
+void Worker::doWork(cv::Mat image, const QList<QRect> &rect_list, const QString &whitelist)
 {
-    QFileInfo fileinfo(imagePath);
-    QString basename = fileinfo.baseName();
-    QString output_noext = this->output_noext_format.arg(basename);
-    QString output_withext = this->output_withext_format.arg(basename);
-
-    QFile logFile("NMN.log");
-    if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
-    {
-        QTextStream out(&logFile);
-        if (!QFile::exists(imagePath))
-        {
-            out << imagePath << " does not exist\n";
-            logFile.close();
-            QMessageBox::critical(nullptr, "Error", QString("cannot open %1\n").arg(imagePath));
-            return;
-        }
-        out << QString("OCR start on %1\n").arg(imagePath);
-        logFile.close();
-    }
-
-    QStringList args;
-    QString tessPath = "D:/Tesseract-OCR/tesseract.exe";
-
-    args << imagePath << output_noext << "--psm" << QString::number(psm);
-    if (whitelist != "")
-        args << "-c" << "tessedit_char_whitelist=" + whitelist;
-    args << "tsv";
-
-    QElapsedTimer timer;
-    timer.start();
-
-    QProcess process;
-    process.start(tessPath, args);
-    process.waitForFinished();
-
-    QString result;
-    if (process.exitCode() == 0)
-    {
-        QFile file(output_withext);
-        if (file.open(QIODevice::ReadOnly))
-        {
-            result = file.readAll();
-            file.close();
-
-            {
-                QFile logFile("NMN.log");
-                if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
-                {
-                    QTextStream out(&logFile);
-                    out << "OCR success" << "\n";
-                    out << "taking " << timer.elapsed() << "ms\n";
-                    logFile.close();
-                }
-            }
-        }
-    }
-
-    QFile::remove(imagePath);
-
-    QList<OCRresult> data = this->parseTSV(output_withext);
-
-    // QFile::remove(output_withext);
-
-    emit ResultReady(data);
-}
-
-QList<OCRresult> Worker::parseTSV(const QString &filepath)
-{
-    QFile tsvFile(filepath);
-
-    if (!tsvFile.open(QIODevice::ReadOnly | QIODevice::Text))
     {
         QFile logFile("NMN.log");
         if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
         {
             QTextStream out(&logFile);
-            out << "parse failed : cannot open" << "\n";
+            out << "OCR started..." << "\n";
             logFile.close();
         }
-        QMessageBox::critical(nullptr, "Error", "cannot open tsv");
     }
 
-    QTextStream in(&tsvFile);
+    QList<QString> result;
 
-    QList<OCRresult> retList;
+    QElapsedTimer timer;
+    timer.start();
 
-    while (!in.atEnd())
+    for (const QRect &rect : rect_list)
     {
-        QString line = in.readLine();
-        OCRresult ocr_result(line.split('\t'));
-        retList.append(ocr_result);
+        cv::Mat rect_image = image(cv::Rect(rect.x(), rect.y(), rect.width(), rect.height())).clone();
+
+        if (!cv::imwrite(this->rect_path.toStdString(), rect_image))
+        {
+            QMessageBox::critical(nullptr, "Error", "Failed to Save");
+            {
+                QFile logFile("NMN.log");
+                if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
+                {
+                    QTextStream out(&logFile);
+                    out << QString("cannot save rect") << "\n";
+                    logFile.close();
+                }
+            }
+        }
+
+        QString tessPath = "D:/Tesseract-OCR/tesseract.exe";
+        QStringList args;
+        args << this->rect_path << this->output_noext << "--psm" << "10";
+        if (whitelist != "")
+            args << "-c" << "tessedit_char_whitelist=" + whitelist;
+
+        QProcess process;
+        process.start(tessPath, args);
+        process.waitForFinished();
+
+        if (process.exitCode() == 0)
+        {
+            QFile file(this->output_withext);
+            if (file.open(QIODevice::ReadOnly))
+            {
+                result.append(QString(file.readAll()).remove(" ").remove("\n"));
+                file.close();
+            }
+        }
     }
-    if (!retList.isEmpty())
-        retList.removeFirst();
 
-    tsvFile.close();
+    {
+        QFile logFile("NMN.log");
+        if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
+        {
+            QTextStream out(&logFile);
+            out << QString("OCR finished, taking %1 ms\n").arg(timer.elapsed());
+        }
+    }
 
-    return retList;
+    QFile::remove(this->rect_path);
+    QFile::remove(this->output_withext);
+
+    emit ResultReady(result);
 }
 
 Controller::Controller()

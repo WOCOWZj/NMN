@@ -1,6 +1,6 @@
 #include "NMN.h"
 #include "imgprcs.h"
-#include "marker.h"
+#include "highlight.h"
 #include <QApplication>
 #include <QString>
 #include <QObject>
@@ -19,11 +19,16 @@ int main(int argc, char *argv[])
     }
 
     QApplication a(argc, argv);
+
     NMN mainwindow;
-    mainwindow.show();
+    ImgProcessor imageprocessor;
+    HighLight highlight;
     
-    imgProcessor imageprocessor;
-    QObject::connect(&mainwindow, &NMN::ImageDropped, &imageprocessor, &imgProcessor::onImageReceived);
+
+    QObject::connect(&mainwindow, &NMN::ImageDropped, &imageprocessor, &ImgProcessor::onImageReceived);
+    QObject::connect(&imageprocessor, &ImgProcessor::ImageProcessed, &highlight, &HighLight::onImageProcessed);
+
+    mainwindow.show();
 
     imageprocessor.onImageReceived("test.jpg");
 

@@ -7,11 +7,14 @@ NMN_autogen/timestamp: \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/moc_predefs.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/NMN.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/NMN.h \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/highlight.cpp \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/highlight.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/imgprcs.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/imgprcs.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/main.cpp \
-	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/marker.cpp \
-	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/marker.h \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/modification.cpp \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/modification.h \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/noteclass.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/tessthread.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/QDir \
@@ -41,6 +44,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/q20utility.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/q23utility.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/qabstractitemmodel.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qalgorithms.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qanystringview.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qarraydata.h \
@@ -126,6 +130,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qprocessordetection.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qrect.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qrefcount.h \
+	D:/Qt/6.9.3/mingw_64/include/QtCore/qregularexpression.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qscopedpointer.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qscopeguard.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qset.h \
@@ -181,8 +186,13 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qversiontagging.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qxptype_traits.h \
 	D:/Qt/6.9.3/mingw_64/include/QtCore/qyieldcpu.h \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/QColor \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QDragEnterEvent \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/QFont \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QImage \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/QMouseEvent \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/QPaintEvent \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/QPainter \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QPixmap \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QTransform \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QWindow \
@@ -205,7 +215,9 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qinputmethod.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qkeysequence.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qpaintdevice.h \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/qpainter.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qpalette.h \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/qpen.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qpicture.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qpixelformat.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qpixmap.h \
@@ -219,28 +231,39 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qsurface.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qsurfaceformat.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qtextdocument.h \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/qtextoption.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qtgui-config.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qtguiexports.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qtguiglobal.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qtransform.h \
+	D:/Qt/6.9.3/mingw_64/include/QtGui/qvalidator.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qvector2d.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qvectornd.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qwindow.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qwindowdefs.h \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/qwindowdefs_win.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QApplication \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QBoxLayout \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QComboBox \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QDialog \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QLabel \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMainWindow \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMenuBar \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMessageBox \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QPushButton \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QScrollArea \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QSizePolicy \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QStatusBar \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QVBoxLayout \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QWidget \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qabstractbutton.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qabstractslider.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qabstractspinbox.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qapplication.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qboxlayout.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qcombobox.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qdialog.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qframe.h \
@@ -252,9 +275,15 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qmenu.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qmenubar.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qmessagebox.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qpushbutton.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qrubberband.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qscrollarea.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qsizepolicy.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qslider.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qstatusbar.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qstyle.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qstyleoption.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtabbar.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtabwidget.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtwidgets-config.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qtwidgetsexports.h \

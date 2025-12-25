@@ -42,26 +42,27 @@ template <> constexpr inline auto Worker::qt_create_metaobjectdata<qt_meta_tag_Z
         "Worker",
         "ResultReady",
         "",
-        "QList<OCRresult>",
-        "data",
+        "result",
         "doWork",
-        "imagePath",
-        "psm",
+        "cv::Mat",
+        "image",
+        "QList<QRect>",
+        "rect_list",
         "whitelist"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'ResultReady'
-        QtMocHelpers::SignalData<void(const QList<OCRresult> &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 3, 4 },
+        QtMocHelpers::SignalData<void(const QList<QString> &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QStringList, 3 },
         }}),
         // Slot 'doWork'
-        QtMocHelpers::SlotData<void(const QString &, int, const QString &)>(5, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 6 }, { QMetaType::Int, 7 }, { QMetaType::QString, 8 },
+        QtMocHelpers::SlotData<void(cv::Mat, const QList<QRect> &, const QString &)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 }, { 0x80000000 | 7, 8 }, { QMetaType::QString, 9 },
         }}),
         // Slot 'doWork'
-        QtMocHelpers::SlotData<void(const QString &, int)>(5, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
-            { QMetaType::QString, 6 }, { QMetaType::Int, 7 },
+        QtMocHelpers::SlotData<void(cv::Mat, const QList<QRect> &)>(4, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+            { 0x80000000 | 5, 6 }, { 0x80000000 | 7, 8 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -86,14 +87,33 @@ void Worker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     auto *_t = static_cast<Worker *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->ResultReady((*reinterpret_cast< std::add_pointer_t<QList<OCRresult>>>(_a[1]))); break;
-        case 1: _t->doWork((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
-        case 2: _t->doWork((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
+        case 0: _t->ResultReady((*reinterpret_cast< std::add_pointer_t<QList<QString>>>(_a[1]))); break;
+        case 1: _t->doWork((*reinterpret_cast< std::add_pointer_t<cv::Mat>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<QRect>>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
+        case 2: _t->doWork((*reinterpret_cast< std::add_pointer_t<cv::Mat>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<QRect>>>(_a[2]))); break;
         default: ;
         }
     }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 1:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 1:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QList<QRect> >(); break;
+            }
+            break;
+        case 2:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 1:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QList<QRect> >(); break;
+            }
+            break;
+        }
+    }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (Worker::*)(const QList<OCRresult> & )>(_a, &Worker::ResultReady, 0))
+        if (QtMocHelpers::indexOfMethod<void (Worker::*)(const QList<QString> & )>(_a, &Worker::ResultReady, 0))
             return;
     }
 }
@@ -123,14 +143,14 @@ int Worker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 3)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+            qt_static_metacall(this, _c, _id, _a);
         _id -= 3;
     }
     return _id;
 }
 
 // SIGNAL 0
-void Worker::ResultReady(const QList<OCRresult> & _t1)
+void Worker::ResultReady(const QList<QString> & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }
@@ -145,26 +165,27 @@ template <> constexpr inline auto Controller::qt_create_metaobjectdata<qt_meta_t
         "Controller",
         "Operate",
         "",
-        "imagePath",
-        "psm",
+        "cv::Mat",
+        "image",
+        "QList<QRect>",
+        "rect_list",
         "whitelist",
         "ResultReady",
-        "QList<OCRresult>",
-        "data"
+        "result"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'Operate'
-        QtMocHelpers::SignalData<void(const QString &, int, const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 3 }, { QMetaType::Int, 4 }, { QMetaType::QString, 5 },
+        QtMocHelpers::SignalData<void(cv::Mat, const QList<QRect> &, const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { 0x80000000 | 3, 4 }, { 0x80000000 | 5, 6 }, { QMetaType::QString, 7 },
         }}),
         // Signal 'Operate'
-        QtMocHelpers::SignalData<void(const QString &, int)>(1, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
-            { QMetaType::QString, 3 }, { QMetaType::Int, 4 },
+        QtMocHelpers::SignalData<void(cv::Mat, const QList<QRect> &)>(1, 2, QMC::AccessPublic | QMC::MethodCloned, QMetaType::Void, {{
+            { 0x80000000 | 3, 4 }, { 0x80000000 | 5, 6 },
         }}),
         // Signal 'ResultReady'
-        QtMocHelpers::SignalData<void(const QList<OCRresult> &)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 7, 8 },
+        QtMocHelpers::SignalData<void(const QList<QString> &)>(8, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QStringList, 9 },
         }}),
     };
     QtMocHelpers::UintData qt_properties {
@@ -189,16 +210,35 @@ void Controller::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     auto *_t = static_cast<Controller *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->Operate((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
-        case 1: _t->Operate((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2]))); break;
-        case 2: _t->ResultReady((*reinterpret_cast< std::add_pointer_t<QList<OCRresult>>>(_a[1]))); break;
+        case 0: _t->Operate((*reinterpret_cast< std::add_pointer_t<cv::Mat>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<QRect>>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[3]))); break;
+        case 1: _t->Operate((*reinterpret_cast< std::add_pointer_t<cv::Mat>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<QRect>>>(_a[2]))); break;
+        case 2: _t->ResultReady((*reinterpret_cast< std::add_pointer_t<QList<QString>>>(_a[1]))); break;
         default: ;
         }
     }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 0:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 1:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QList<QRect> >(); break;
+            }
+            break;
+        case 1:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 1:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QList<QRect> >(); break;
+            }
+            break;
+        }
+    }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (Controller::*)(const QString & , int , const QString & )>(_a, &Controller::Operate, 0))
+        if (QtMocHelpers::indexOfMethod<void (Controller::*)(cv::Mat , const QList<QRect> & , const QString & )>(_a, &Controller::Operate, 0))
             return;
-        if (QtMocHelpers::indexOfMethod<void (Controller::*)(const QList<OCRresult> & )>(_a, &Controller::ResultReady, 2))
+        if (QtMocHelpers::indexOfMethod<void (Controller::*)(const QList<QString> & )>(_a, &Controller::ResultReady, 2))
             return;
     }
 }
@@ -228,20 +268,20 @@ int Controller::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 3)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+            qt_static_metacall(this, _c, _id, _a);
         _id -= 3;
     }
     return _id;
 }
 
 // SIGNAL 0
-void Controller::Operate(const QString & _t1, int _t2, const QString & _t3)
+void Controller::Operate(cv::Mat _t1, const QList<QRect> & _t2, const QString & _t3)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1, _t2, _t3);
 }
 
 // SIGNAL 2
-void Controller::ResultReady(const QList<OCRresult> & _t1)
+void Controller::ResultReady(const QList<QString> & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 2, nullptr, _t1);
 }

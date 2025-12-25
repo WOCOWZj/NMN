@@ -34,16 +34,18 @@ void NMN::dropEvent(QDropEvent *event)
 {
     QString filepath = event->mimeData()->urls().at(0).path();
     filepath = filepath.right(filepath.length() - 1);
+
+    this->image.load(filepath);
+
     ui->infoLabel->setText(filepath);
 
     ui->scrollarea->setMinimumWidth(800);
     ui->imageLabel->setMinimumWidth(800);
     ui->scrollarea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     ui->scrollarea->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
-    QPixmap scaledPixmap = QPixmap(filepath).scaledToWidth(ui->imageLabel->width() - 40, Qt::SmoothTransformation);
+    QPixmap scaledPixmap = this->image.scaledToWidth(ui->imageLabel->width() - 50, Qt::SmoothTransformation);
     ui->imageLabel->setPixmap(scaledPixmap);
 
-    this->path = filepath;
     emit ImageDropped(filepath);
 
     event->accept();

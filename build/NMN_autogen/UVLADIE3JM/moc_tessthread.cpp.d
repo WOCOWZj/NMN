@@ -208,6 +208,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/deque.tcc \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/enable_special_members.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/erase_if.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
@@ -263,6 +264,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_deque.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_function.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_heap.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator.h \
@@ -274,6 +276,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_numeric.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_pair.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_queue.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_relops.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
@@ -298,12 +301,14 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cfloat \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/chrono \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/complex \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/condition_variable \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
@@ -315,6 +320,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/assertions.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/debug/debug.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/deque \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/aligned_buffer.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/alloc_traits.h \
@@ -330,12 +336,14 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/list \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/math.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
@@ -347,6 +355,7 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_numeric_defs.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/queue \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
@@ -390,12 +399,17 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/emmintrin.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/float.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mmintrin.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdarg.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/xmmintrin.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_mac.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_off_t.h \
@@ -431,4 +445,113 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
+  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+  D:/opencv/opencv/build/include/opencv2/calib3d.hpp \
+  D:/opencv/opencv/build/include/opencv2/core.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/affine.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/async.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/base.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/bufferpool.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/check.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/cuda.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/cuda.inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/cuda_types.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/cv_cpu_dispatch.h \
+  D:/opencv/opencv/build/include/opencv2/core/cvdef.h \
+  D:/opencv/opencv/build/include/opencv2/core/cvstd.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/cvstd.inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/cvstd_wrapper.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/fast_math.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/hal/interface.h \
+  D:/opencv/opencv/build/include/opencv2/core/mat.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/mat.inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/matx.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/matx.inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/neon_utils.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/operations.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/optim.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/ovx.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/persistence.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/saturate.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/traits.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/types.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/utility.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/utils/logger.defines.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/utils/logger.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/utils/logtag.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/version.hpp \
+  D:/opencv/opencv/build/include/opencv2/core/vsx_utils.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn/dict.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn/dnn.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn/dnn.inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn/layer.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn/utils/inference_engine.hpp \
+  D:/opencv/opencv/build/include/opencv2/dnn/version.hpp \
+  D:/opencv/opencv/build/include/opencv2/features2d.hpp \
+  D:/opencv/opencv/build/include/opencv2/flann.hpp \
+  D:/opencv/opencv/build/include/opencv2/flann/all_indices.h \
+  D:/opencv/opencv/build/include/opencv2/flann/allocator.h \
+  D:/opencv/opencv/build/include/opencv2/flann/any.h \
+  D:/opencv/opencv/build/include/opencv2/flann/autotuned_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/composite_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/config.h \
+  D:/opencv/opencv/build/include/opencv2/flann/defines.h \
+  D:/opencv/opencv/build/include/opencv2/flann/dist.h \
+  D:/opencv/opencv/build/include/opencv2/flann/dynamic_bitset.h \
+  D:/opencv/opencv/build/include/opencv2/flann/flann_base.hpp \
+  D:/opencv/opencv/build/include/opencv2/flann/general.h \
+  D:/opencv/opencv/build/include/opencv2/flann/ground_truth.h \
+  D:/opencv/opencv/build/include/opencv2/flann/heap.h \
+  D:/opencv/opencv/build/include/opencv2/flann/hierarchical_clustering_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/index_testing.h \
+  D:/opencv/opencv/build/include/opencv2/flann/kdtree_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/kdtree_single_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/kmeans_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/linear_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/logger.h \
+  D:/opencv/opencv/build/include/opencv2/flann/lsh_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/lsh_table.h \
+  D:/opencv/opencv/build/include/opencv2/flann/matrix.h \
+  D:/opencv/opencv/build/include/opencv2/flann/miniflann.hpp \
+  D:/opencv/opencv/build/include/opencv2/flann/nn_index.h \
+  D:/opencv/opencv/build/include/opencv2/flann/params.h \
+  D:/opencv/opencv/build/include/opencv2/flann/random.h \
+  D:/opencv/opencv/build/include/opencv2/flann/result_set.h \
+  D:/opencv/opencv/build/include/opencv2/flann/sampling.h \
+  D:/opencv/opencv/build/include/opencv2/flann/saving.h \
+  D:/opencv/opencv/build/include/opencv2/flann/timer.h \
+  D:/opencv/opencv/build/include/opencv2/highgui.hpp \
+  D:/opencv/opencv/build/include/opencv2/imgcodecs.hpp \
+  D:/opencv/opencv/build/include/opencv2/imgproc.hpp \
+  D:/opencv/opencv/build/include/opencv2/imgproc/segmentation.hpp \
+  D:/opencv/opencv/build/include/opencv2/ml.hpp \
+  D:/opencv/opencv/build/include/opencv2/ml/ml.inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/aruco_board.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/aruco_detector.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/aruco_dictionary.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/barcode.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/charuco_detector.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/detection_based_tracker.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/face.hpp \
+  D:/opencv/opencv/build/include/opencv2/objdetect/graphical_code_detector.hpp \
+  D:/opencv/opencv/build/include/opencv2/opencv.hpp \
+  D:/opencv/opencv/build/include/opencv2/opencv_modules.hpp \
+  D:/opencv/opencv/build/include/opencv2/photo.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/blenders.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/camera.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/exposure_compensate.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/matchers.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/motion_estimators.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/seam_finders.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/util.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/util_inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/warpers.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/detail/warpers_inl.hpp \
+  D:/opencv/opencv/build/include/opencv2/stitching/warpers.hpp \
+  D:/opencv/opencv/build/include/opencv2/video.hpp \
+  D:/opencv/opencv/build/include/opencv2/video/background_segm.hpp \
+  D:/opencv/opencv/build/include/opencv2/video/tracking.hpp \
+  D:/opencv/opencv/build/include/opencv2/videoio.hpp

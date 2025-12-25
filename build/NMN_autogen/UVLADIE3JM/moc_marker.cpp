@@ -8,6 +8,7 @@
 
 #include "../../../src/marker.h"
 #include <QtCore/qmetatype.h>
+#include <QtCore/QList>
 
 #include <QtCore/qtmochelpers.h>
 
@@ -38,10 +39,19 @@ template <> constexpr inline auto Marker::qt_create_metaobjectdata<qt_meta_tag_Z
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "Marker"
+        "Marker",
+        "onImgProcessed",
+        "",
+        "filepath",
+        "QList<Note>",
+        "result"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Slot 'onImgProcessed'
+        QtMocHelpers::SlotData<void(const QString &, const QList<Note> &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QString, 3 }, { 0x80000000 | 4, 5 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -63,10 +73,12 @@ Q_CONSTINIT const QMetaObject Marker::staticMetaObject = { {
 void Marker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     auto *_t = static_cast<Marker *>(_o);
-    (void)_t;
-    (void)_c;
-    (void)_id;
-    (void)_a;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        switch (_id) {
+        case 0: _t->onImgProcessed((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QList<Note>>>(_a[2]))); break;
+        default: ;
+        }
+    }
 }
 
 const QMetaObject *Marker::metaObject() const
@@ -85,6 +97,18 @@ void *Marker::qt_metacast(const char *_clname)
 int Marker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QObject::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 1)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 1;
+    }
+    if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 1)
+            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
+        _id -= 1;
+    }
     return _id;
 }
 QT_WARNING_POP

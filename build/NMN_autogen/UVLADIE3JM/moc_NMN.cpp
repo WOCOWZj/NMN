@@ -47,7 +47,7 @@ template <> constexpr inline auto NMN::qt_create_metaobjectdata<qt_meta_tag_ZN3N
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'ImageDropped'
-        QtMocHelpers::SignalData<void(const QString)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
     };
@@ -78,7 +78,7 @@ void NMN::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (NMN::*)(const QString )>(_a, &NMN::ImageDropped, 0))
+        if (QtMocHelpers::indexOfMethod<void (NMN::*)(const QString & )>(_a, &NMN::ImageDropped, 0))
             return;
     }
 }
@@ -115,7 +115,7 @@ int NMN::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void NMN::ImageDropped(const QString _t1)
+void NMN::ImageDropped(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }
