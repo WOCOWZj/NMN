@@ -155,7 +155,6 @@ C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/UVLADIE3JM/m
   D:/Qt/6.9.3/mingw_64/include/QtGui/QColor \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QFont \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QMouseEvent \
-  D:/Qt/6.9.3/mingw_64/include/QtGui/QPaintEvent \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QPainter \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QTransform \
   D:/Qt/6.9.3/mingw_64/include/QtGui/QWindow \

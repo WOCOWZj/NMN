@@ -1,6 +1,6 @@
 #include "modification.h"
 
-Modification::Modification(const QString &title, QWidget *parent, const Note &note)
+Modification::Modification(const QString &title, QWidget *parent, const Note &note, const Mode &Mode)
     : QDialog(parent)
 {
     this->setWindowTitle(title);
@@ -26,7 +26,7 @@ Modification::Modification(const QString &title, QWidget *parent, const Note &no
     hbox2->addWidget(this->accidental_label);
     hbox2->addWidget(this->accidental_combobox);
 
-    this->octdot_label = new QLabel("音名");
+    this->octdot_label = new QLabel("音区");
     this->octdot_combobox = new QComboBox;
     this->octdot_combobox->addItems({"Lower", "None", "Higher"});
     this->octdot_combobox->setCurrentIndex(static_cast<int>(note.octDot));
@@ -41,7 +41,8 @@ Modification::Modification(const QString &title, QWidget *parent, const Note &no
 
     vbox->addLayout(hbox1);
     vbox->addLayout(hbox2);
-    vbox->addLayout(hbox3);
+    if (Mode == Mode::Mod8App)
+        vbox->addLayout(hbox3);
     vbox->addLayout(hbox4);
 
     connect(this->accept_button, &QPushButton::clicked, this, &Modification::onAccept);

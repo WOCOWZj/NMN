@@ -1,6 +1,7 @@
 #include "NMN.h"
 #include "imgprcs.h"
 #include "highlight.h"
+#include "convert.h"
 #include <QApplication>
 #include <QString>
 #include <QObject>
@@ -23,10 +24,11 @@ int main(int argc, char *argv[])
     NMN mainwindow;
     ImgProcessor imageprocessor;
     HighLight highlight;
-    
+    Converter converter;
 
     QObject::connect(&mainwindow, &NMN::ImageDropped, &imageprocessor, &ImgProcessor::onImageReceived);
     QObject::connect(&imageprocessor, &ImgProcessor::ImageProcessed, &highlight, &HighLight::onImageProcessed);
+    QObject::connect(highlight.label, &HighLightLabel::ResultReady, &converter, &Converter::onResultReady);
 
     mainwindow.show();
 

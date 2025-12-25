@@ -38,37 +38,42 @@ void HighLightLabel::init(const QPixmap &pixmap, const QList<Note> &notes)
     this->setFixedSize(this->pixmap.size());
     this->setAlignment(Qt::AlignCenter);
 
-    int sum_w = 0, sum_h = 0;
     int max_h = 0;
+    for (const Note note : this->notes)
+    {
+        const QRect rect = note.rect;
+        max_h = qMax(max_h, rect.height());
+    }
+    this->spacing = qRound(1.5 * max_h);
+}
+
+void HighLightLabel::adaptFontSize(QPainter &painter, const QString &text)
+{
+    int sum_w = 0, sum_h = 0;
     for (const Note note : this->notes)
     {
         const QRect rect = note.rect;
         sum_w += rect.width();
         sum_h += rect.height();
-        max_h = qMax(max_h, rect.height());
     }
     int ave_w = sum_w / this->notes.length(), ave_h = sum_h / this->notes.length();
-    this->ave_rect = QRect(0, 0, ave_w, ave_h);
-    this->spacing = qRound(1.5 * max_h);
-}
+    QRect ave_rect = QRect(0, 0, ave_w, ave_h);
 
-void HighLightLabel::adaptFontSize(QPainter &painter, const QRect &rect, const QString &text)
-{
     QFont font = painter.font();
     int fontSize = 12;
     font.setPointSize(fontSize);
     painter.setFont(font);
 
     QFontMetrics fm(font);
-    QRect br = fm.boundingRect(rect, Qt::AlignCenter, text);
+    QRect br = fm.boundingRect(ave_rect, Qt::AlignCenter, text);
 
-    while (fontSize > 1 && (br.width() > rect.width() || br.height() > rect.height()))
+    while (fontSize > 1 && (br.width() > ave_rect.width() || br.height() > ave_rect.height()))
     {
         fontSize--;
         font.setPointSize(fontSize);
         painter.setFont(font);
         fm = QFontMetrics(font);
-        br = fm.boundingRect(rect, Qt::AlignCenter, text);
+        br = fm.boundingRect(ave_rect, Qt::AlignCenter, text);
     }
 }
 
@@ -76,7 +81,7 @@ void HighLightLabel::paintEvent(QPaintEvent *event)
 {
     QPainter painter(this);
     painter.setPen(QPen(this->outline_color));
-    adaptFontSize(painter, this->ave_rect, "F");
+    adaptFontSize(painter, "F");
     painter.drawPixmap(QPoint(0, 0), this->pixmap);
 
     for (const Note note : notes)
@@ -205,11 +210,25 @@ void HighLightLabel::keyPressEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_Return)
     {
-        QMessageBox::StandardButton reply = QMessageBox::question(nullptr, "提交", "确定要提交吗");
-        if (reply == QMessageBox::Yes)
+        Modification modif("调号", this);
+        if (modif.exec() == QDialog::Accepted)
         {
-            emit ResultReady(this->notes);
-            this->parentWidget()->close();
+            Note tune = modif.getResult();
+            {
+                QFile logFile("NMN.log");
+                if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
+                {
+                    QTextStream out(&logFile);
+                    out << QString("tune: %1\n").arg(tune.Note2QString());
+                }
+                logFile.close();
+            }
+            QMessageBox::StandardButton reply = QMessageBox::question(nullptr, "提交", "确定要提交吗");
+            if (reply == QMessageBox::Yes)
+            {
+                emit ResultReady(this->pixmap, tune, this->notes);
+                this->parentWidget()->close();
+            }
         }
     }
     QLabel::keyPressEvent(event);

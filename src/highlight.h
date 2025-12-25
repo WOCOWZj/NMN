@@ -7,7 +7,6 @@
 #include <QEvent>
 #include <QMouseEvent>
 #include <QPainter>
-#include <QPaintEvent>
 #include <QFont>
 #include <qminmax.h>
 #include <QColor>
@@ -27,8 +26,7 @@ class HighLightLabel : public QLabel
 private:
     QPixmap pixmap;
     QList<Note> notes;
-    QRect ave_rect;
-    void adaptFontSize(QPainter &painter, const QRect &rect, const QString &text);
+    void adaptFontSize(QPainter &painter, const QString &text);
     int spacing;
     const QColor outline_color = Qt::red;
 
@@ -58,7 +56,7 @@ signals:
     void LeftClick(int ind);
     void RightClick(int ind);
     void Framed();
-    void ResultReady(const QList<Note> &notes);
+    void ResultReady(const QPixmap &image, const Note &tune, const QList<Note> &notes);
 
 public slots:
     void onLeftClick(int ind);
@@ -70,10 +68,8 @@ class HighLight : public QWidget
 {
     Q_OBJECT
 
-private:
-    HighLightLabel *label;
-
 public:
+    HighLightLabel *label;
     HighLight(QWidget *parent = nullptr);
 
 public slots:

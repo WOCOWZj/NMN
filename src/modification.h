@@ -15,7 +15,15 @@ class Modification : public QDialog
     Q_OBJECT
 
 public:
-    explicit Modification(const QString &title, QWidget *parent = nullptr, const Note &note = {.rect = QRect(), .noteName = Note::NoteName::C, .accidental = Note::Accidental::NATURAL, .octDot = Note::OctDot::NONE});
+    enum class Mode
+    {
+        Mod8App,
+        Tune
+    };
+    explicit Modification(const QString &title,
+                          QWidget *parent = nullptr,
+                          const Note &note = Note(),
+                          const Mode &mode = Mode::Mod8App);
     int exec() override;
     Note getResult() const;
 

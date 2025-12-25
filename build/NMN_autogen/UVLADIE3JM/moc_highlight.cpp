@@ -47,7 +47,10 @@ template <> constexpr inline auto HighLightLabel::qt_create_metaobjectdata<qt_me
         "RightClick",
         "Framed",
         "ResultReady",
-        "QList<Note>&",
+        "image",
+        "Note",
+        "tune",
+        "QList<Note>",
         "notes",
         "onLeftClick",
         "onRightClick",
@@ -66,19 +69,19 @@ template <> constexpr inline auto HighLightLabel::qt_create_metaobjectdata<qt_me
         // Signal 'Framed'
         QtMocHelpers::SignalData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
         // Signal 'ResultReady'
-        QtMocHelpers::SignalData<void(QList<Note> &)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { 0x80000000 | 7, 8 },
+        QtMocHelpers::SignalData<void(const QPixmap &, const Note &, const QList<Note> &)>(6, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::QPixmap, 7 }, { 0x80000000 | 8, 9 }, { 0x80000000 | 10, 11 },
         }}),
         // Slot 'onLeftClick'
-        QtMocHelpers::SlotData<void(int)>(9, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(12, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 3 },
         }}),
         // Slot 'onRightClick'
-        QtMocHelpers::SlotData<void(int)>(10, 2, QMC::AccessPublic, QMetaType::Void, {{
+        QtMocHelpers::SlotData<void(int)>(13, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 3 },
         }}),
         // Slot 'onFramed'
-        QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPublic, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -105,7 +108,7 @@ void HighLightLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 0: _t->LeftClick((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 1: _t->RightClick((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 2: _t->Framed(); break;
-        case 3: _t->ResultReady((*reinterpret_cast< std::add_pointer_t<QList<Note>&>>(_a[1]))); break;
+        case 3: _t->ResultReady((*reinterpret_cast< std::add_pointer_t<QPixmap>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<Note>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QList<Note>>>(_a[3]))); break;
         case 4: _t->onLeftClick((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 5: _t->onRightClick((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         case 6: _t->onFramed(); break;
@@ -119,7 +122,7 @@ void HighLightLabel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
             return;
         if (QtMocHelpers::indexOfMethod<void (HighLightLabel::*)()>(_a, &HighLightLabel::Framed, 2))
             return;
-        if (QtMocHelpers::indexOfMethod<void (HighLightLabel::*)(QList<Note> & )>(_a, &HighLightLabel::ResultReady, 3))
+        if (QtMocHelpers::indexOfMethod<void (HighLightLabel::*)(const QPixmap & , const Note & , const QList<Note> & )>(_a, &HighLightLabel::ResultReady, 3))
             return;
     }
 }
@@ -174,9 +177,9 @@ void HighLightLabel::Framed()
 }
 
 // SIGNAL 3
-void HighLightLabel::ResultReady(QList<Note> & _t1)
+void HighLightLabel::ResultReady(const QPixmap & _t1, const Note & _t2, const QList<Note> & _t3)
 {
-    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1);
+    QMetaObject::activate<void>(this, &staticMetaObject, 3, nullptr, _t1, _t2, _t3);
 }
 namespace {
 struct qt_meta_tag_ZN9HighLightE_t {};

@@ -7,6 +7,8 @@ NMN_autogen/timestamp: \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/build/NMN_autogen/moc_predefs.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/NMN.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/NMN.h \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/convert.cpp \
+	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/convert.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/highlight.cpp \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/highlight.h \
 	C:/Users/29607/Documents/2025\ spring\ CPCT/C/NMN/src/imgprcs.cpp \
@@ -191,7 +193,6 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QFont \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QImage \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QMouseEvent \
-	D:/Qt/6.9.3/mingw_64/include/QtGui/QPaintEvent \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QPainter \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QPixmap \
 	D:/Qt/6.9.3/mingw_64/include/QtGui/QTransform \
@@ -246,6 +247,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QBoxLayout \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QComboBox \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QDialog \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QFileDialog \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QLabel \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMainWindow \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/QMenuBar \
@@ -266,6 +268,7 @@ NMN_autogen/timestamp: \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qcombobox.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qdialog.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qfiledialog.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qframe.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qgridlayout.h \
 	D:/Qt/6.9.3/mingw_64/include/QtWidgets/qlabel.h \
