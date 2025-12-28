@@ -608,8 +608,8 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/NMN.h
  mdp:D:/opencv/opencv/build/include/opencv2/videoio.hpp
  uic:NMN_autogen/include/ui_NMN.h
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/NMN.cpp
-C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/reciever.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/main.cpp
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/reciever.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/reciever.h
  mmc:Q_OBJECT
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/moc_predefs.h
@@ -1553,6 +1553,7 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.h
  mdp:D:/opencv/opencv/build/include/opencv2/video/background_segm.hpp
  mdp:D:/opencv/opencv/build/include/opencv2/video/tracking.hpp
  mdp:D:/opencv/opencv/build/include/opencv2/videoio.hpp
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/marker.h
  mmc:Q_OBJECT
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/moc_predefs.h
@@ -1948,7 +1949,6 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/marker.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
-C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/imgprcs.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/marker.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.h
  mmc:Q_OBJECT
@@ -2509,7 +2509,6 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.h
  mdp:D:/opencv/opencv/build/include/opencv2/video/background_segm.hpp
  mdp:D:/opencv/opencv/build/include/opencv2/video/tracking.hpp
  mdp:D:/opencv/opencv/build/include/opencv2/videoio.hpp
-C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/highlight.h
  mmc:Q_OBJECT
  mdp:C:/Users/29607/Documents/2025 spring CPCT/C/NMN/build/NMN_autogen/moc_predefs.h
@@ -2994,6 +2993,7 @@ C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/highlight.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
+C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/tessthread.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/highlight.cpp
 C:/Users/29607/Documents/2025 spring CPCT/C/NMN/src/modification.h
  mmc:Q_OBJECT

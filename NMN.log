@@ -428,3 +428,12 @@ OCR started...
 OCR finished, taking 2870 ms
 found 23 notes: 2 3 5 6 3 2 6 6 5 6 1 2 3 2 3 5 6 1 3 4 1 1 6
 tune:  1 
+
+-----------------------
+2025-12-28 15:56:30
+pretreat finished: 235 by 810
+hseg finished: 1lines
+vseg finished: 26rects
+OCR started...
+OCR finished, taking 2548 ms
+found 23 notes: 2 3 5 6 3 2 6 6 5 6 1 2 3 2 3 5 6 1 3 4 1 1 6

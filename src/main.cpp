@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
     mainwindow.show();
 
-    imageprocessor.onImageReceived("test.jpg");
+    //imageprocessor.onImageReceived("test.jpg");
 
     return a.exec();
 }
