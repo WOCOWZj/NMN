@@ -13,7 +13,7 @@
 #include <QList>
 #include <QRect>
 
-#include "NMN_autogen/include/ui_NMN.h"
+#include "ui_NMN.h"
 #include "noteclass.h"
 
 class NMN : public QMainWindow

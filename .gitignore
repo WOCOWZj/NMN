@@ -1,0 +1,19 @@
+# --- 构建产物 ---
+/build/
+build/
+out/
+cmake-build-*/
+
+# --- 运行期生成 ---
+NMN.log
+
+# --- OCR 临时文件（tessthread 写入 assets/）---
+/assets/rect.png
+/assets/rect
+/assets/rect.txt
+
+# --- 编译/IDE 本地产物 ---
+*.user
+*.autosave
+CMakeUserPresets.json
+compile_commands.json
