@@ -1,20 +1,22 @@
 #pragma once
 
 #include <QImage>
-#include <QList>
 #include <QObject>
-#include <QRect>
-
-#include <opencv2/core.hpp>
 
 #include "core/Score.h"
-#include "vision/OcrEngine.h"
+#include "vision/GlyphClassifier.h"
+#include "vision/TemplateClassifier.h"
 
 namespace pipeline {
 
-/// 真正干活的类，被移到工作线程中执行。
-/// 整个流程（预处理 → 切行 → 切格 → OCR → 组装 Score）都在这里完成，
-/// 不再像原实现那样把耗时的切分留在 GUI 线程。
+/// 识别流水线的执行体，运行在工作线程中。
+///
+/// 流程：
+///   1. 第一遍在原始分辨率上估计字号；
+///   2. 字号过小时整图放大（让字形达到约 40 px），再走一遍；
+///   3. 二值化 → 剥离减时线 → 垂直投影选乐谱行；
+///   4. 行内连通域 → 粘连拆分 → 基线与弧线过滤；
+///   5. 字形模板匹配（洞数软约束），低置信度时用 Tesseract 兜底。
 class RecognitionWorker : public QObject
 {
     Q_OBJECT
@@ -33,13 +35,9 @@ signals:
 private:
     static cv::Mat toBgrMat(const QImage& image);
 
-    /// 把一个 OCR 格子拆成 expectedCount 个字形框。
-    /// 优先用连通域真实位置；数量对不上时退回等分，保证与旧行为一致。
-    static QList<QRect> splitGlyphBoxes(const cv::Mat& binary,
-                                        const QRect& cell,
-                                        int expectedCount);
-
-    vision::OcrEngine m_engine;
+    vision::TemplateClassifier m_templates;
+    vision::GlyphClassifier m_ocrFallback;
+    bool m_templatesLoaded = false;
 };
 
 } // namespace pipeline

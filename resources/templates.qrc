@@ -1,0 +1,38 @@
+﻿<RCC>
+  <qresource prefix="/templates">    <file alias="FangSong_1.png">templates/FangSong_1.png</file>
+    <file alias="FangSong_2.png">templates/FangSong_2.png</file>
+    <file alias="FangSong_3.png">templates/FangSong_3.png</file>
+    <file alias="FangSong_4.png">templates/FangSong_4.png</file>
+    <file alias="FangSong_5.png">templates/FangSong_5.png</file>
+    <file alias="FangSong_6.png">templates/FangSong_6.png</file>
+    <file alias="FangSong_7.png">templates/FangSong_7.png</file>
+    <file alias="KaiTi_1.png">templates/KaiTi_1.png</file>
+    <file alias="KaiTi_2.png">templates/KaiTi_2.png</file>
+    <file alias="KaiTi_3.png">templates/KaiTi_3.png</file>
+    <file alias="KaiTi_4.png">templates/KaiTi_4.png</file>
+    <file alias="KaiTi_5.png">templates/KaiTi_5.png</file>
+    <file alias="KaiTi_6.png">templates/KaiTi_6.png</file>
+    <file alias="KaiTi_7.png">templates/KaiTi_7.png</file>
+    <file alias="MicrosoftYaHei_1.png">templates/MicrosoftYaHei_1.png</file>
+    <file alias="MicrosoftYaHei_2.png">templates/MicrosoftYaHei_2.png</file>
+    <file alias="MicrosoftYaHei_3.png">templates/MicrosoftYaHei_3.png</file>
+    <file alias="MicrosoftYaHei_4.png">templates/MicrosoftYaHei_4.png</file>
+    <file alias="MicrosoftYaHei_5.png">templates/MicrosoftYaHei_5.png</file>
+    <file alias="MicrosoftYaHei_6.png">templates/MicrosoftYaHei_6.png</file>
+    <file alias="MicrosoftYaHei_7.png">templates/MicrosoftYaHei_7.png</file>
+    <file alias="SimHei_1.png">templates/SimHei_1.png</file>
+    <file alias="SimHei_2.png">templates/SimHei_2.png</file>
+    <file alias="SimHei_3.png">templates/SimHei_3.png</file>
+    <file alias="SimHei_4.png">templates/SimHei_4.png</file>
+    <file alias="SimHei_5.png">templates/SimHei_5.png</file>
+    <file alias="SimHei_6.png">templates/SimHei_6.png</file>
+    <file alias="SimHei_7.png">templates/SimHei_7.png</file>
+    <file alias="SimSun_1.png">templates/SimSun_1.png</file>
+    <file alias="SimSun_2.png">templates/SimSun_2.png</file>
+    <file alias="SimSun_3.png">templates/SimSun_3.png</file>
+    <file alias="SimSun_4.png">templates/SimSun_4.png</file>
+    <file alias="SimSun_5.png">templates/SimSun_5.png</file>
+    <file alias="SimSun_6.png">templates/SimSun_6.png</file>
+    <file alias="SimSun_7.png">templates/SimSun_7.png</file>
+  </qresource>
+</RCC>

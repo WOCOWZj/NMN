@@ -53,7 +53,10 @@ file(GLOB_RECURSE NMN_HEADERS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src
 file(GLOB_RECURSE NMN_FORMS   CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.ui")
 
 # 头文件一并列入源文件：保证 AUTOMOC 能扫描到子目录里的 Q_OBJECT
-add_executable(${PROJECT_NAME} WIN32 ${NMN_SOURCES} ${NMN_HEADERS} ${NMN_FORMS})
+# resources/templates.qrc 把字形模板编进可执行文件，运行时无需外部文件
+add_executable(${PROJECT_NAME} WIN32
+    ${NMN_SOURCES} ${NMN_HEADERS} ${NMN_FORMS}
+    "${CMAKE_CURRENT_SOURCE_DIR}/resources/templates.qrc")
 
 target_include_directories(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/src"
@@ -63,6 +66,28 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE TESS_IMPORTS)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Widgets
+    ${OpenCV_LIBS}
+    "${NMN_TESSERACT_LIB}")
+
+# ---------------------------------------------------------------------------
+# 开发用探针：命令行跑视觉流水线并对照 ground truth 算准确率。
+# 不参与默认构建，需要时用 cmake --build <dir> --target nmn_probe
+# ---------------------------------------------------------------------------
+add_executable(${PROJECT_NAME}_probe EXCLUDE_FROM_ALL
+    tools/probe.cpp
+    src/vision/ImageNormalizer.cpp
+    src/vision/GlyphExtractor.cpp
+    src/vision/GlyphClassifier.cpp
+    src/vision/TemplateClassifier.cpp)
+
+target_include_directories(${PROJECT_NAME}_probe PRIVATE
+    "${CMAKE_CURRENT_SOURCE_DIR}/src"
+    "${NMN_TESSERACT_INCLUDE}")
+
+target_compile_definitions(${PROJECT_NAME}_probe PRIVATE TESS_IMPORTS)
+
+target_link_libraries(${PROJECT_NAME}_probe PRIVATE
+    Qt6::Core
     ${OpenCV_LIBS}
     "${NMN_TESSERACT_LIB}")
 

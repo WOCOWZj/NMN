@@ -17,3 +17,8 @@ NMN.log
 *.autosave
 CMakeUserPresets.json
 compile_commands.json
+
+# --- 开发调试产物 ---
+/assets/seg_debug.png
+/assets/*.png
+
