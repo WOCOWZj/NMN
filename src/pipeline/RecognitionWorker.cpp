@@ -4,6 +4,7 @@
 #include "vision/Preprocessor.h"
 #include "vision/Segmenter.h"
 
+#include <QStringList>
 #include <QtGlobal>
 
 #include <opencv2/imgproc.hpp>
@@ -123,7 +124,16 @@ void RecognitionWorker::run(const QImage& image)
 
     core::Score score;
     score.setNotes(notes);
-    util::Logger::info(QStringLiteral("识别出 %1 个音符").arg(score.size()));
+
+    // 记录音符序列，便于与历史结果逐音对比
+    QStringList digits;
+    digits.reserve(score.size());
+    for (int i = 0; i < score.size(); ++i)
+        digits << QString::number(static_cast<int>(score.at(i).name) + 1);
+
+    util::Logger::info(QStringLiteral("识别出 %1 个音符：%2")
+                           .arg(score.size())
+                           .arg(digits.join(QLatin1Char(' '))));
 
     emit finished(score);
 }
