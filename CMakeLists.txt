@@ -32,10 +32,12 @@ message(STATUS "OpenCV : ${OpenCV_DIR} (${OpenCV_VERSION})")
 # ---------------------------------------------------------------------------
 # 目标
 # ---------------------------------------------------------------------------
-file(GLOB NMN_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
-file(GLOB NMN_FORMS   CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.ui")
+file(GLOB_RECURSE NMN_SOURCES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file(GLOB_RECURSE NMN_HEADERS CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
+file(GLOB_RECURSE NMN_FORMS   CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.ui")
 
-add_executable(${PROJECT_NAME} WIN32 ${NMN_SOURCES} ${NMN_FORMS})
+# 头文件一并列入源文件：保证 AUTOMOC 能扫描到子目录里的 Q_OBJECT
+add_executable(${PROJECT_NAME} WIN32 ${NMN_SOURCES} ${NMN_HEADERS} ${NMN_FORMS})
 
 target_include_directories(${PROJECT_NAME} PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src")
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets ${OpenCV_LIBS})

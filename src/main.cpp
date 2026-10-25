@@ -1,38 +1,25 @@
-#include "NMN.h"
-#include "imgprcs.h"
-#include "highlight.h"
-#include "convert.h"
+#include "core/Score.h"
+#include "ui/MainWindow.h"
+#include "util/Logger.h"
+
 #include <QApplication>
-#include <QString>
-#include <QObject>
-#include <opencv2/opencv.hpp>
-#pragma comment(lib, "user32.lib")
+#include <QFile>
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-    QFile logFile("NMN.log");
-    if (logFile.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text))
-    {
-        QTextStream out(&logFile);
-        out << "\n-----------------------\n"
-            << QDateTime::currentDateTime().toString("yyyy-MM-dd hh:mm:ss") << "\n";
-        logFile.close();
-    }
+    QApplication app(argc, argv);
 
-    QApplication a(argc, argv);
+    // core::Score 要跨线程通过信号传递，必须先注册元类型
+    qRegisterMetaType<core::Score>("core::Score");
 
-    NMN mainwindow;
-    ImgProcessor imageprocessor;
-    HighLight highlight;
-    Converter converter;
+    util::Logger::beginSession();
 
-    QObject::connect(&mainwindow, &NMN::ImageDropped, &imageprocessor, &ImgProcessor::onImageReceived);
-    QObject::connect(&imageprocessor, &ImgProcessor::ImageProcessed, &highlight, &HighLight::onImageProcessed);
-    QObject::connect(highlight.label, &HighLightLabel::ResultReady, &converter, &Converter::onResultReady);
+    MainWindow window;
+    window.show();
 
-    mainwindow.show();
+    // 便于快速验证：工作目录下有 test.jpg 时自动识别一次
+    if (QFile::exists(QStringLiteral("test.jpg")))
+        window.openImage(QStringLiteral("test.jpg"));
 
-    imageprocessor.onImageReceived("test.jpg");
-
-    return a.exec();
+    return app.exec();
 }
